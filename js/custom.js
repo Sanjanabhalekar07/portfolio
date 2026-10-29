@@ -47,6 +47,10 @@
                         $(".contactform").find(".output_message").addClass("error");
                         $(".output_message").text("Error Sending!");
                     }
+                },
+                error: function() {
+                    $(".contactform").find(".output_message").removeClass("success").addClass("error");
+                    $(".output_message").text("Error Sending!");
                 }
             });
 
